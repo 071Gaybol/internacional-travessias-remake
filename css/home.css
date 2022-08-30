@@ -1,0 +1,33 @@
+.header-bg {
+  background-color: var(--c02);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.icones {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 7px;
+}
+
+.icones a:hover {
+  color: var(--p4);
+  transition: 0.3s;
+}
+
+.icones-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font: 600 1.125rem/1.5 "Poppins", sans-serif;
+}
+
+.icones-item span {
+  display: block;
+  margin-left: 1ch;
+}
