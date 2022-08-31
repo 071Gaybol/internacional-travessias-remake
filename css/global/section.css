@@ -1,0 +1,48 @@
+.section {
+  background-color: var(--p3);
+  padding: 18px 0 18px 38%;
+}
+
+.section h1 {
+  position: relative;
+  font: 600 2.5rem/1.5 "Poppins", sans-serif;
+  width: max-content;
+}
+
+.section h1 img {
+  width: 150px;
+  height: 120px;
+  position: absolute;
+  left: -180px;
+  top: -30px;
+}
+
+@media (max-width: 800px) {
+  .section {
+    padding: 7px 0 7px 38%;
+  }
+
+  .section h1 img {
+    width: 100px;
+    height: 80px;
+    left: -110px;
+    top: -20px;
+  }
+
+  .section h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .section h1 img {
+    width: 61px;
+    height: 50px;
+    left: -65px;
+    top: -12px;
+  }
+
+  .section h1 {
+    font-size: 1.125rem;
+  }
+}

@@ -1,0 +1,92 @@
+.header-bg {
+  background-color: var(--c02);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.icones {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 7px;
+  color: var(--s3);
+}
+
+svg path {
+  fill: var(--s3);
+}
+
+.icones a:hover {
+  color: var(--p4);
+  transition: 0.4s;
+}
+
+.icones a:hover svg path {
+  fill: var(--p4);
+  transition: 0.4s;
+}
+
+.icones-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font: 600 1.125rem/1.5 "Poppins", sans-serif;
+  width: 110%;
+}
+
+.icones-item span {
+  display: block;
+  margin-left: 0.7ch;
+}
+
+.hamburguer {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding: 8px;
+  }
+
+  .header a,
+  a img {
+    height: 26px;
+    align-self: center;
+  }
+
+  .icones-item p {
+    display: none;
+  }
+
+  .hamburguer {
+    display: inline-block;
+    height: 40px;
+    padding-left: 14px;
+  }
+
+  .icones {
+    gap: 12px;
+    padding: 0;
+  }
+
+  .icones svg {
+    height: 40px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .icones svg {
+    height: 26px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .hamburguer {
+    height: 24px;
+  }
+}
