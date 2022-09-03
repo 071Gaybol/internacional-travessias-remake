@@ -76,3 +76,65 @@
   grid-column: 2/4;
   margin-top: auto;
 }
+
+.boletins {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .noticia {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: fit-content;
+    padding: 40px 0;
+    gap: 16px;
+  }
+  .noticia p {
+    width: 565px;
+  }
+
+  .tarifas,
+  .noticia-secundaria {
+    display: none;
+  }
+
+  .boletins {
+    display: block;
+    font: 400 1.5rem/1.5 "Poppins", sans-serif;
+    justify-self: right;
+  }
+}
+
+@media (max-width: 600px) {
+  .noticia {
+    padding: 20px 0;
+  }
+  .noticia img {
+    width: 360px;
+    height: 220px;
+    margin: 0 auto;
+    margin-bottom: 4px;
+  }
+  .noticia h2 {
+    font: 400 1.375rem/1.5 "Roboto", sans-serif;
+  }
+  .noticia p {
+    width: 360px;
+  }
+  .boletins {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .noticia img {
+    width: 280px;
+    height: 169px;
+    object-fit: cover;
+  }
+
+  .noticia p {
+    width: 240px;
+    font-size: 0.625rem;
+  }
+}
