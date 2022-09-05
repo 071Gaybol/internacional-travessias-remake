@@ -1,3 +1,5 @@
+/*== Introdução ==*/
+
 .introducao {
   display: flex;
   gap: 45px;
@@ -32,6 +34,8 @@
   }
 }
 
+/*== Notícias ==*/
+
 .noticia {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -43,6 +47,7 @@
 
 .noticia p {
   font: 400 1rem/1.125 "Roboto", sans-serif;
+  margin-top: 8px;
 }
 
 .noticia-principal {
@@ -90,6 +95,7 @@
     gap: 16px;
   }
   .noticia p {
+    margin-top: 4px;
     width: 565px;
   }
 
@@ -102,6 +108,11 @@
     display: block;
     font: 400 1.5rem/1.5 "Poppins", sans-serif;
     justify-self: right;
+  }
+
+  .boletins:hover {
+    color: var(--p3);
+    transition: 0.3s;
   }
 }
 
@@ -136,5 +147,63 @@
   .noticia p {
     width: 240px;
     font-size: 0.625rem;
+  }
+}
+
+/*== Cartões ==*/
+
+.cartoes {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  padding: 80px 20px 100px 20px;
+}
+
+.cartoes-item {
+  width: 270px;
+}
+
+.cartoes-item h2 {
+  font: 700 1.375rem/1.15 "poppins", sans-serif;
+  margin-bottom: 8px;
+}
+.cartoes-item p {
+  font: 400 1rem/1.15 "roboto", sans-serif;
+}
+
+.cartoes-mobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .cartoes {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cartoes-item h2 {
+    font-size: 1rem;
+  }
+
+  .cartoes-item p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cartoes {
+    display: none;
+  }
+
+  .cartoes-mobile {
+    padding: 16px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cartoes-mobile a {
+    margin: 40px;
   }
 }

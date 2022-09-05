@@ -4,6 +4,7 @@
 @import "./global/global.css";
 @import "./global/header.css";
 @import "./global/section.css";
+@import "./global/slide.css";
 
 /* Utilidades */
 @import "./utilidades/utilidades.css";
