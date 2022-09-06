@@ -203,7 +203,9 @@
     align-items: center;
   }
 
-  .cartoes-mobile a {
+  .next,
+  .prev {
     margin: 40px;
+    display: inline-block;
   }
 }

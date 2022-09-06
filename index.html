@@ -106,31 +106,61 @@
     </div>
 
     <div class="slideshow cartoes-mobile">
-      <a class="prev" onclick="plusSlides(-1)"><svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="19.5" y="29.5" width="19" height="29" rx="3.5" transform="rotate(180 19.5 29.5)" fill="#99BE11" stroke="#F7FAFA" />
-          <path d="M12.5 25L15 25L7.5 15L15 5L12.5 5L5 15L12.5 25Z" stroke="#F7FAFA" stroke-width="3" />
-        </svg></a>
-      <div class="mySlides fade">
-        <img src="./img/cartao-recarregavel.png" alt="cartao estudante">
-      </div>
+      <a class="prev" onclick="plusSlides(-1, 0)"><img src="./img/icones/botao-passar-esquerda.svg" alt=""></a>
 
-      <div class="mySlides fade">
-        <img src="./img/cartao-estudante.png" alt="cartao estudante">
-      </div>
+      <a href="./" class="mySlides1 fade">
+        <img width="275" height="240" src="./img/cartao-recarregavel.png" alt="cartao estudante">
+      </a>
 
-      <div class="mySlides fade">
-        <img src="./img/cartao-social.png" alt="cartao estudante">
-      </div>
-      <a class="next" onclick="plusSlides(1)"><svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" width="19" height="29" rx="3.5" fill="#99BE11" stroke="#F7FAFA" />
-          <path d="M7.5 5H5L12.5 15L5 25H7.5L15 15L7.5 5Z" stroke="#F7FAFA" stroke-width="3" />
-        </svg></a>
+      <a href="./" class="mySlides1 fade">
+        <img width="275" height="240" src="./img/cartao-estudante.png" alt="cartao estudante">
+      </a>
+
+      <a href="./" class="mySlides1 fade">
+        <img width="275" height="240" src="./img/cartao-social.png" alt="cartao estudante">
+      </a>
+      <a class="next" onclick="plusSlides(1, 0)"><img src="./img/icones/botao-passar-direita.svg" alt=""></a>
 
     </div>
 
     <div class="section">
       <h1><img src="./img/icones/logo-secao.png" alt="">Nossos Ferrys</h1>
     </div>
+
+    <div class="slideshow ferry-desktop">
+      <div class="mySlides2 fade">
+        <div class="slide-name">FB Ana Nery</div>
+        <img src="./img/anna-nery.jpg" alt="Anna Nery">
+        <div class="ferry-dados-bg">
+          <div class="ferry-dados">
+            <img src="./img/icones/boy_black_24dp.svg" alt="">
+            <h3>Passageiros</h3>
+            <p>549</p>
+          </div>
+          <div class="ferry-dados">
+            <img src="./img/icones/directions_car_black_24dp.svg" alt="">
+            <h3>Veículos</h3>
+            <p>59</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="passador">
+        <a class="prev" onclick="plusSlides(-1, 1)"><img src="./img/icones/botao-passar-esquerda.svg" alt=""></a>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+        <a class="next" onclick="plusSlides(1, 1)"><img src="./img/icones/botao-passar-direita.svg" alt=""></a>
+      </div>
+    </div>
+
   </main>
 
   <script src="./js/script.js"></script>

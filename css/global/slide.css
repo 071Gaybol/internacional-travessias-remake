@@ -8,13 +8,10 @@
   user-select: none;
 }
 
-.slideshow svg rect {
-  fill: var(--p3);
-}
-
-.slideshow a:hover svg rect {
-  fill: var(--p4);
-  transition: 0.3s;
+.passador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dot {
