@@ -209,3 +209,71 @@
     display: inline-block;
   }
 }
+
+/* == Nossos Ferrys == */
+.ferry-desktop {
+  position: relative;
+  padding-top: 210px;
+  padding-bottom: 83px;
+}
+
+.ferry {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.slide-name {
+  position: relative;
+  grid-column: 2;
+  margin-bottom: 40px;
+  justify-self: right;
+  width: 650px;
+}
+
+.slide-name h2 {
+  max-width: 520px;
+  padding-left: 20px;
+  background-color: var(--s5);
+  color: var(--c01);
+  font: 600 2.5rem/1.5 "poppins", sans-serif;
+}
+
+.slide-name img {
+  position: absolute;
+  right: 650px;
+  top: -120px;
+  height: 382px;
+  border-radius: 4px;
+}
+
+.ferry-dados-bg {
+  background: linear-gradient(to right, var(--c00) 25%, var(--s5) 0%);
+  grid-column: 1/-1;
+}
+
+.dados {
+  display: flex;
+  justify-content: right;
+  margin-right: 240px;
+  padding-top: 40px;
+  padding-bottom: 186px;
+  gap: 70px;
+}
+
+.ferry-dados {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px;
+  font: 500 1.5rem/1.15 "roboto", sans-serif;
+  color: var(--c01);
+}
+
+.ferry-dados p {
+  background-color: var(--p2);
+  width: 50px;
+  height: 28px;
+  padding: 6px 9px;
+  text-align: right;
+  grid-column: 2;
+  justify-self: right;
+}
