@@ -396,3 +396,59 @@
     height: 10px;
   }
 }
+
+/* == Fique pro dentro == */
+
+.cultura {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cultura-item {
+  width: 260px;
+  font: 600 2.5rem/1.5 "poppins", sans-serif;
+  text-align: center;
+}
+
+.cultura-item p {
+  font: 500 1rem/1.15 "roboto", sans-serif;
+  text-align: left;
+}
+
+@media (max-width: 1100px) {
+  .cultura-item {
+    width: 200px;
+    font-size: 2rem;
+  }
+
+  .cultura-item p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .cultura {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .cultura-item {
+    width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cultura {
+    grid-template-columns: 1fr;
+  }
+
+  .cultura-item {
+    width: 240px;
+  }
+}
