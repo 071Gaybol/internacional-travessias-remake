@@ -16,11 +16,14 @@
   margin-bottom: 20px;
 }
 
-.footer-contato p {
+.footer-contato a {
   font: 400 1.5rem/1.5 "poppins", sans-serif;
   color: var(--c02);
 }
-
+.footer-contato a:hover {
+  color: var(--s1);
+  transition: 0.3s;
+}
 .detalhe:after {
   content: "";
   display: block;
@@ -47,10 +50,15 @@
   text-align: center;
 }
 
-.footer-map li {
+.footer-map a {
   display: flex;
   gap: 4px;
   margin-bottom: 20px;
+}
+
+.footer-map a:hover {
+  color: var(--s1);
+  transition: 0.3s;
 }
 
 .footer-info {
@@ -80,7 +88,7 @@
     font-size: 0.7rem;
   }
 
-  .footer-contato p {
+  .footer-contato a {
     font-size: 1rem;
   }
 
@@ -118,7 +126,7 @@
     font-size: 0.5rem;
   }
 
-  .footer-contato p {
+  .footer-contato a {
     font-size: 0.75rem;
   }
 

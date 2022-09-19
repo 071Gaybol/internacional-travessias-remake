@@ -63,6 +63,11 @@
 .noticia-principal img {
   width: 565px;
   height: 392px;
+  transition: all 0.3s;
+}
+
+.noticia-principal:hover img {
+  transform: scale(1.03);
 }
 
 .noticia-secundaria h2 {
@@ -75,11 +80,21 @@
 .noticia-secundaria img {
   width: 275px;
   height: 229px;
+  transition: all 0.3s;
+}
+
+.noticia-secundaria:hover img {
+  transform: scale(1.03);
 }
 
 .tarifas {
   grid-column: 2/4;
   margin-top: auto;
+  transition: all 0.3s;
+}
+
+.tarifas:hover {
+  transform: scale(1.01);
 }
 
 .boletins {
@@ -161,6 +176,11 @@
 
 .cartoes-item {
   width: 270px;
+}
+
+.cartoes-item:hover h2 {
+  color: var(--p3);
+  transition: 0.3s;
 }
 
 .cartoes-item h2 {
@@ -410,6 +430,18 @@
   width: 260px;
   font: 600 2.5rem/1.5 "poppins", sans-serif;
   text-align: center;
+}
+
+.cultura-item img {
+  transition: all 0.3s;
+}
+
+.cultura-item:hover img {
+  transform: scale(1.01);
+}
+.cultura-item:hover h2 {
+  color: var(--p3);
+  transition: 0.3s;
 }
 
 .cultura-item p {
